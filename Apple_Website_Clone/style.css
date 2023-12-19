@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  zoom: 1;
+}
+/*               End of Setup             */
+
+body {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  height: 44px;
+}
+
+nav a {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 10%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.hero {
+  margin-top: 10px;
+}
+
+#product-info {
+  margin-top: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+#product-name {
+  font-weight: 600;
+}
+
+#product-text {
+  text-align: center;
+  font-size: 39.5px;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+#product-links {
+  text-align: center;
+}
+
+#product-links li {
+  display: inline-block;
+  font-size: 23.7px;
+  line-height: 1.3375;
+  font-weight: 300;
+  margin: 0 6px 12px;
+}
+
+#product-links li a {
+  color: #08c;
+  text-decoration: none;
+}
+
+#product-links > li > a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#product-image {
+  background: url(./images/hero_iphone_13pro.jpg) center no-repeat;
+  height: 600px;
+  margin-top: -200px;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hero-sub-section {
+  margin-top: 16px;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sub-hero-images {
+  height: 200px;
+  background-size: 640px 200px;
+  border-right: 2px solid #fff;
+}
+
+#sub-hero-watch {
+  background: url(images/watch_large.jpg) center center no-repeat;
+}
+
+#sub-hero-ipad {
+  background: url(images/ipad_pro_large.jpg) center center no-repeat;
+}
+
+#sub-hero-access {
+  background: url(images/accessories_large.jpg) center center no-repeat;
+}
+
+#sub-hero-macbook {
+  background: url(images/macbook_large.jpg) center center no-repeat;
+}
+
+#exchange {
+  margin: 22px 0 18px;
+  letter-spacing: -0.1px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#exchange a {
+  color: #08c;
+  text-decoration: none;
+}
+
+#exchange a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #f2f2f2;
+  font-size: 11.94px;
+  line-height: 1.66667;
+  font-weight: 400;
+  letter-spacing: -0.01px;
+  color: #666;
+}
+
+.footer-nav {
+  padding-top: 20px;
+}
+
+.footer-nav ul > li:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.footer-nav ul > li:not(:first-child) > a {
+  text-decoration: none;
+  color: #666;
+}
+
+.col-2 {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
