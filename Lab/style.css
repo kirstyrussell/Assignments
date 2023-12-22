@@ -76,9 +76,10 @@ table {
 .clearfix:after {
   clear: both;
 }
+
 .clearfix {
   clear: both;
-  *zoom: 1;
+  zoom: 1;
 }
 
 /* Header */
