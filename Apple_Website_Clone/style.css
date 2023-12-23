@@ -71,6 +71,38 @@ table {
 }
 /*               End of Setup             */
 
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
 body {
   font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
   font-size: 18px;
@@ -156,12 +188,6 @@ h2 {
   margin-top: -200px;
 }
 
-.col-3 {
-  width: 25%;
-  display: inline-block;
-  vertical-align: top;
-}
-
 .hero-sub-section {
   margin-top: 16px;
 }
@@ -219,8 +245,18 @@ footer {
   color: #666;
 }
 
+footer > .container {
+  padding: 0 22px;
+}
+
 .footer-nav {
   padding-top: 20px;
+}
+
+.col-2 {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .footer-nav ul > li:first-child {
@@ -233,8 +269,66 @@ footer {
   color: #666;
 }
 
-.col-2 {
-  width: 20%;
+.footer-help {
+  color: #999;
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.footer-help > p:first-child {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+}
+
+.footer-help > p:first-child > a {
+  color: #08c;
+  text-decoration: none;
+}
+
+.footer-help > div {
   display: inline-block;
   vertical-align: top;
+}
+
+#legal {
+  margin-right: 22px;
+}
+
+#legal-links > a {
+  color: #666;
+  text-decoration: none;
+}
+
+#legal-links > a:not(:last-child) {
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 12px;
+}
+
+#legal-links > a {
+  color: #666;
+  text-decoration: none;
+}
+
+#locale {
+  float: right;
+}
+
+#locale > a {
+  vertical-align: top;
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+}
+
+#locale-flag {
+  display: inline-block;
+  height: 16px;
+  width: 21px;
+  background: url(images/usa.png) 3px 0 no-repeat;
+    background-size: auto;
+  background-size: 16px 16px;
+  margin-top: 1px;
+  padding-right: 1px;
 }
